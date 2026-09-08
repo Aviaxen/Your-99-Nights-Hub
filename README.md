@@ -3,15 +3,10 @@ local Rayfield = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
 local window = Rayfield:CreateWindow({ 
     Name = "Your 99 Nights Hub", 
     Subtitle = "By Inky", 
-    Theme = "amethyst", 
-    Configuration = { 
-        AutoSave = true, 
-        AutoLoad = true, 
-        FileName = "Your 99 Nights Hub" 
-    } 
-})
+    sidebarLayout = true,
+ })   
 
-local homeTab = window:CreateTab({ Name = "Home", Icon = 93364949241311 })
+local homeTab = window:CreateTab({ Name = "Home", Icon = 0 })
 
 homeTab:CreateSection({ Name = "Featured" })
 
@@ -45,7 +40,7 @@ homeTab:CreateSlider({
     end 
 })
 
-local foxnamehubTab = window:CreateTab({ Name = "Foxname Hub", Icon = 93364949241311 })
+local foxnamehubTab = window:CreateTab({ Name = "Foxname Hub", Icon = 0 })
 
 foxnamehubTab:CreateSection({ Name = "Script" })
 
@@ -53,7 +48,7 @@ foxnamehubTab:CreateButton({ Name = "Foxname Hub", Callback = function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Foxname-65930"))()
 end })
 
-local voidwarehubTab = window:CreateTab({ Name = "VoidWare Hub", Icon = 93364949241311 })
+local voidwarehubTab = window:CreateTab({ Name = "VoidWare Hub", Icon = 0 })
 
 voidwarehubTab:CreateSection({ Name = "Script" })
 
@@ -61,7 +56,7 @@ voidwarehubTab:CreateButton({ Name = "VoidWare Hub", Callback = function()
     loadstring(game:HttpGet("https://files.vapevoidware.xyz/VapeVoidware/VW-Add/main/loader.lua", true))()
 end })
 
-local thedarkonehubTab = window:CreateTab({ Name = "The Darkone Hub", Icon = 93364949241311 })
+local thedarkonehubTab = window:CreateTab({ Name = "The Darkone Hub", Icon = 0 })
 
 thedarkonehubTab:CreateSection({ Name = "Script" })
 
